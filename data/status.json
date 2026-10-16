@@ -1,5 +1,13 @@
 {
- "last_date": "2026-10-13",
- "updated_at": "bootstrap",
- "note": "bootstrap from eod2_data"
+ "previous_last_date": "2026-10-13",
+ "adjustments": [],
+ "skipped_days": [],
+ "new_symbols": [],
+ "note": "",
+ "last_date": "2026-10-15",
+ "days_added": [
+  "2026-10-14",
+  "2026-10-15"
+ ],
+ "updated_at": "2026-10-16T09:26:55+05:30"
 }
