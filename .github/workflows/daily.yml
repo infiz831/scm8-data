@@ -1,0 +1,34 @@
+name: NSE daily update
+
+on:
+  schedule:
+    - cron: '0 13 * * 1-5'    # 18:30 IST
+    - cron: '50 13 * * 1-5'   # 19:20 IST (retry if NSE was late)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nse-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas requests
+      - run: python scripts/update_nse.py data
+      - name: Commit new data
+        run: |
+          git config user.name "scm8-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "NSE data to $(python -c "import json;print(json.load(open('data/status.json'))['last_date'])")"
+          git push
