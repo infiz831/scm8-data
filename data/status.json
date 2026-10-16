@@ -1,13 +1,14 @@
 {
- "previous_last_date": "2026-10-13",
+ "previous_last_date": "2026-10-15",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
- "note": "",
- "last_date": "2026-10-15",
- "days_added": [
-  "2026-10-14",
-  "2026-10-15"
+ "new_symbols": [
+  "BANSALWIRE"
  ],
- "updated_at": "2026-10-16T09:26:55+05:30"
+ "note": "",
+ "last_date": "2026-10-16",
+ "days_added": [
+  "2026-10-16"
+ ],
+ "updated_at": "2026-10-16T22:39:59+05:30"
 }
