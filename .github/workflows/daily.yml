@@ -2,8 +2,13 @@ name: NSE daily update
 
 on:
   schedule:
-    - cron: '0 13 * * 1-5'    # 18:30 IST
-    - cron: '50 13 * * 1-5'   # 19:20 IST (retry if NSE was late)
+    # GitHub often delays (or skips) scheduled runs, most at the top of the hour, so several
+    # off-the-hour attempts. A run after the data is saved changes nothing.
+    - cron: '7 13 * * 1-5'    # 18:37 IST
+    - cron: '7 14 * * 1-5'    # 19:37 IST
+    - cron: '37 15 * * 1-5'   # 21:07 IST
+    - cron: '7 18 * * 1-5'    # 23:37 IST
+    - cron: '37 23 * * 1-5'   # 05:07 IST next morning (Tue-Sat): last catch-up before the 06:57 checks
   workflow_dispatch: {}
 
 permissions:
