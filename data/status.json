@@ -1,25 +1,10 @@
 {
- "previous_last_date": "2026-10-16",
- "adjustments": [
-  {
-   "symbol": "CCAVENUE",
-   "date": "2026-10-19",
-   "factor": 10.0
-  },
-  {
-   "symbol": "CEREBRAINT",
-   "date": "2026-10-19",
-   "factor": 1.09579
-  }
- ],
+ "previous_last_date": "2026-10-19",
+ "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "CCAVENUE"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-10-19",
- "days_added": [
-  "2026-10-19"
- ],
- "updated_at": "2026-10-20T00:42:57+05:30"
+ "days_added": [],
+ "updated_at": "2026-10-20T01:21:39+05:30"
 }
