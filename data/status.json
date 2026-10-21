@@ -2,9 +2,13 @@
  "previous_last_date": "2026-10-19",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "HDFIRE"
+ ],
  "note": "",
- "last_date": "2026-10-19",
- "days_added": [],
- "updated_at": "2026-10-21T07:25:08+05:30"
+ "last_date": "2026-10-21",
+ "days_added": [
+  "2026-10-21"
+ ],
+ "updated_at": "2026-10-21T23:28:16+05:30"
 }
