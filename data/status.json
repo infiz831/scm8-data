@@ -2,9 +2,15 @@
  "previous_last_date": "2026-10-21",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "FUSIONCX",
+  "IIRM",
+  "JSWDULUX"
+ ],
  "note": "",
- "last_date": "2026-10-21",
- "days_added": [],
- "updated_at": "2026-10-22T07:14:01+05:30"
+ "last_date": "2026-10-22",
+ "days_added": [
+  "2026-10-22"
+ ],
+ "updated_at": "2026-10-22T23:25:22+05:30"
 }
