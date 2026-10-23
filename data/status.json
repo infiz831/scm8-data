@@ -2,9 +2,17 @@
  "previous_last_date": "2026-10-22",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "AZADIND",
+  "BONFIG",
+  "SMT",
+  "TONBO",
+  "ZETWERK"
+ ],
  "note": "",
- "last_date": "2026-10-22",
- "days_added": [],
- "updated_at": "2026-10-23T07:19:01+05:30"
+ "last_date": "2026-10-23",
+ "days_added": [
+  "2026-10-23"
+ ],
+ "updated_at": "2026-10-23T23:20:17+05:30"
 }
