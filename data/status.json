@@ -1,15 +1,10 @@
 {
- "previous_last_date": "2026-10-26",
+ "previous_last_date": "2026-10-27",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "KHAZANCHI",
-  "SUDARSHAN"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-10-27",
- "days_added": [
-  "2026-10-27"
- ],
- "updated_at": "2026-10-28T00:08:25+05:30"
+ "days_added": [],
+ "updated_at": "2026-10-28T00:55:10+05:30"
 }
