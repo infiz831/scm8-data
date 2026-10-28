@@ -1,15 +1,10 @@
 {
- "previous_last_date": "2026-10-27",
+ "previous_last_date": "2026-10-28",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "JPL",
-  "PARASHLTH"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-10-28",
- "days_added": [
-  "2026-10-28"
- ],
- "updated_at": "2026-10-29T00:15:32+05:30"
+ "days_added": [],
+ "updated_at": "2026-10-29T01:00:26+05:30"
 }
