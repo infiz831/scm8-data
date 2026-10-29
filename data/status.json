@@ -2,9 +2,13 @@
  "previous_last_date": "2026-10-28",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "BONDADA"
+ ],
  "note": "",
- "last_date": "2026-10-28",
- "days_added": [],
- "updated_at": "2026-10-29T08:13:50+05:30"
+ "last_date": "2026-10-29",
+ "days_added": [
+  "2026-10-29"
+ ],
+ "updated_at": "2026-10-30T00:24:36+05:30"
 }
