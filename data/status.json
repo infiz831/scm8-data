@@ -1,14 +1,10 @@
 {
- "previous_last_date": "2026-10-28",
+ "previous_last_date": "2026-10-29",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "BONDADA"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-10-29",
- "days_added": [
-  "2026-10-29"
- ],
- "updated_at": "2026-10-30T00:24:36+05:30"
+ "days_added": [],
+ "updated_at": "2026-10-30T01:05:21+05:30"
 }
