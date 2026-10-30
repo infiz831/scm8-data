@@ -1,15 +1,10 @@
 {
- "previous_last_date": "2026-10-29",
+ "previous_last_date": "2026-10-30",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "ARHAM",
-  "INDTONER"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-10-30",
- "days_added": [
-  "2026-10-30"
- ],
- "updated_at": "2026-10-31T00:02:15+05:30"
+ "days_added": [],
+ "updated_at": "2026-10-31T00:47:34+05:30"
 }
