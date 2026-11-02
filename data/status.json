@@ -2,9 +2,13 @@
  "previous_last_date": "2026-10-30",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "EDELALTS"
+ ],
  "note": "",
- "last_date": "2026-10-30",
- "days_added": [],
- "updated_at": "2026-10-31T08:09:58+05:30"
+ "last_date": "2026-11-02",
+ "days_added": [
+  "2026-11-02"
+ ],
+ "updated_at": "2026-11-03T03:46:51+05:30"
 }
