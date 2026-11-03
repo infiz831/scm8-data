@@ -2,9 +2,14 @@
  "previous_last_date": "2026-11-02",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "BLSPOLY",
+  "SFCTECH"
+ ],
  "note": "",
- "last_date": "2026-11-02",
- "days_added": [],
- "updated_at": "2026-11-03T09:29:40+05:30"
+ "last_date": "2026-11-03",
+ "days_added": [
+  "2026-11-03"
+ ],
+ "updated_at": "2026-11-04T01:32:23+05:30"
 }
