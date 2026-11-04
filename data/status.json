@@ -2,9 +2,16 @@
  "previous_last_date": "2026-11-03",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "ENNATURE",
+  "IGLSPIRITS",
+  "MELSTAR",
+  "MKJEWELS"
+ ],
  "note": "",
- "last_date": "2026-11-03",
- "days_added": [],
- "updated_at": "2026-11-04T08:38:51+05:30"
+ "last_date": "2026-11-04",
+ "days_added": [
+  "2026-11-04"
+ ],
+ "updated_at": "2026-11-05T01:53:33+05:30"
 }
