@@ -1,16 +1,10 @@
 {
- "previous_last_date": "2026-11-05",
+ "previous_last_date": "2026-11-06",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [
-  "BAHETI",
-  "BRIGHTOUTD",
-  "KMEW"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-11-06",
- "days_added": [
-  "2026-11-06"
- ],
- "updated_at": "2026-11-07T01:25:15+05:30"
+ "days_added": [],
+ "updated_at": "2026-11-07T01:56:12+05:30"
 }
