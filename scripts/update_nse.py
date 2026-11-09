@@ -15,6 +15,7 @@ D = os.path.join(ROOT, 'daily')
 KEEP = 1100                      # trading days of history kept per stock
 SERIES = ('EQ', 'BE', 'BZ')      # same universe as eod2 (SME series excluded)
 ADJ_THRESHOLD = 0.03             # treat a >3% gap between NSE's previous close and ours as a corporate action
+MAX_ADJ = 30                     # more than this many 'corporate actions' in one day = a missing session, not splits
 UA = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                     'Chrome/126.0 Safari/537.36',
       'Accept': '*/*', 'Accept-Language': 'en-US,en;q=0.9', 'Referer': 'https://www.nseindia.com/'}
@@ -42,6 +43,8 @@ def fetch(day, session):
 def main():
     meta = json.load(open(os.path.join(ROOT, 'meta.json')))
     hol = {dt.datetime.strptime(k, '%d-%b-%Y').date() for k in meta.get('holidays', {})}
+    # special sessions on a weekend/holiday (e.g. Diwali Muhurat trading) are real sessions: fetch them
+    special = {dt.datetime.strptime(k, '%d-%b-%Y').date() for k in meta.get('special_sessions', {})}
     mp_path = os.path.join(ROOT, 'isin_symbol_map.json')
     sym2isin = json.load(open(mp_path))['sym2isin']
     isin2file = {}
@@ -59,7 +62,7 @@ def main():
     day = last + dt.timedelta(days=1)
     added = []
     while day <= end:
-        if day.weekday() >= 5 or day in hol:
+        if (day.weekday() >= 5 or day in hol) and day not in special:
             day += dt.timedelta(days=1); continue
         df = fetch(day, s)
         if df is None:
@@ -70,6 +73,21 @@ def main():
             day += dt.timedelta(days=1); continue
         df = df[df['SctySrs'].isin(SERIES) & ~df['TckrSymb'].astype(str).str.contains('-RE')]
         ds = str(day)
+        # safety lock: a gap between NSE's previous close and ours in many stocks at once means a session
+        # is missing from our data (e.g. an unlisted Muhurat session), not hundreds of splits. Save nothing.
+        n_gap = 0
+        for t in df.itertuples(index=False):
+            fname = isin2file.get(t.ISIN)
+            path = os.path.join(D, f'{fname}.csv') if fname else None
+            if path and os.path.exists(path) and float(t.PrvsClsgPric) > 0:
+                lc = pd.read_csv(path, usecols=['Date', 'Close']).iloc[-1]
+                if str(lc['Date']) < ds and lc['Close'] > 0 and abs(float(t.PrvsClsgPric) / float(lc['Close']) - 1) > ADJ_THRESHOLD:
+                    n_gap += 1
+        if n_gap > MAX_ADJ:
+            status['note'] = (f'MASS ADJUSTMENT BLOCKED on {ds}: {n_gap} stocks differ >3% from our previous close - '
+                              f'a session is probably missing (e.g. Muhurat; add it to meta.json special_sessions). '
+                              f'{ds} NOT saved.')
+            break
         for t in df.itertuples(index=False):
             isin, sym = t.ISIN, str(t.TckrSymb)
             if not str(isin).startswith('INE'):
