@@ -2,9 +2,13 @@
  "previous_last_date": "2026-11-09",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "VEEFIN"
+ ],
  "note": "",
- "last_date": "2026-11-09",
- "days_added": [],
- "updated_at": "2026-11-11T08:26:45+05:30"
+ "last_date": "2026-11-11",
+ "days_added": [
+  "2026-11-11"
+ ],
+ "updated_at": "2026-11-12T01:37:07+05:30"
 }
