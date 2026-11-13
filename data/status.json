@@ -2,9 +2,13 @@
  "previous_last_date": "2026-11-12",
  "adjustments": [],
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "ESFL"
+ ],
  "note": "",
- "last_date": "2026-11-12",
- "days_added": [],
- "updated_at": "2026-11-13T09:01:36+05:30"
+ "last_date": "2026-11-13",
+ "days_added": [
+  "2026-11-13"
+ ],
+ "updated_at": "2026-11-14T01:55:36+05:30"
 }
