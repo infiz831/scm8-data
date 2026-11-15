@@ -1,0 +1,16 @@
+symbol,isin,ex_date,factor,subject,source,applied
+ARIHANTACA,485360,2026-10-01,2,BONUS 1:1,nse_api_seed,repaired-2026-11-15
+BLSE,INE0NLT01010,2026-10-06,2,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share,nse_api_seed,repaired-2026-11-15
+BUILDPRO,INE24OJ01011,2026-10-08,5,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,nse_api_seed,repaired-2026-11-15
+AISL,485645,2026-10-09,2,BONUS 1:1,nse_api_seed,repaired-2026-11-15
+MOLDTECH,INE835B01035,2026-10-09,2,Bonus 1:1,nse_api_seed,repaired-2026-11-15
+MOLDTKPAC,INE893J01011,2026-10-09,2,Bonus 1:1,nse_api_seed,repaired-2026-11-15
+OLIL,485758,2026-10-15,1.5,BONUS 1:2,nse_api_seed,repaired-2026-11-15
+BANSALWIRE,INE0B9K01025,2026-10-16,5,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share,nse_api_seed,repaired-2026-11-15
+JSWDULUX,INE133A01011,2026-10-22,10,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,nse_api_seed,repaired-2026-11-15
+AZADIND,INE566M01017,2026-10-23,5,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,nse_api_seed,repaired-2026-11-15
+ANLON,486557,2026-11-02,1.4,BONUS 2:5,nse_api_seed,repaired-2026-11-15
+CONCORDBIO,INE338H01029,2026-11-04,2,Bonus 1:1,nse_api_seed,repaired-2026-11-15
+GNRL,INE207H01018,2026-11-05,10,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share,nse_api_seed,repaired-2026-11-15
+KMEW,INE0CJD01011,2026-11-06,5,Face Value Split (Sub-Division) - From Rs 5/- Per Share To Re 1/- Per Share,nse_api_seed,repaired-2026-11-15
+PASHUPATI,INE124Y01010,2026-11-13,2.5,Bonus 3:2,nse_api_seed,repaired-2026-11-15
