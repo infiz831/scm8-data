@@ -96,6 +96,17 @@ def fetch_ca_api(session, start, end):
     return rows
 
 
+def parse_date(x):
+    """explicit formats only (pandas' dayfirst guess turns 2026-11-04 into 11 April)"""
+    x = str(x).strip()
+    for fmt in ('%Y-%m-%d', '%d-%b-%Y', '%d-%b-%y', '%d-%m-%Y', '%d/%m/%Y', '%d %b %Y', '%d-%B-%Y'):
+        try:
+            return pd.Timestamp(dt.datetime.strptime(x, fmt))
+        except ValueError:
+            pass
+    return pd.NaT
+
+
 def fetch_ca_pr(session, day):
     """backup source: 'bc' file in NSE's daily PR zip (actions announced that day; ex-date = record date)"""
     url = f'https://nsearchives.nseindia.com/archives/equities/bhavcopy/pr/PR{day:%d%m%y}.zip'
@@ -120,7 +131,7 @@ def fetch_ca_pr(session, day):
         if f == 1.0:
             continue
         d = next((t[c] for c in (c_ex, c_rec, c_bcs) if c and str(t[c]).strip() not in ('', '-', 'nan')), None)
-        ex = pd.to_datetime(d, dayfirst=True, errors='coerce') if d else pd.NaT
+        ex = parse_date(d) if d else pd.NaT
         if not pd.isna(ex):
             rows.append([str(t[c_sym]).strip(), '', str(ex.date()), f'{f:.6g}', str(t[c_pur]).strip(), 'nse_pr_bc'])
     return rows

@@ -1,5 +1,4 @@
 symbol,isin,ex_date,factor,subject,source,applied
-CONCORDBIO,,2026-04-11,2,BONUS 1:1,nse_pr_bc,
 ARIHANTACA,485360,2026-10-01,2,BONUS 1:1,nse_api_seed,repaired-2026-11-15
 BLSE,INE0NLT01010,2026-10-06,2,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share,nse_api_seed,repaired-2026-11-15
 BUILDPRO,INE24OJ01011,2026-10-08,5,Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 2/- Per Share,nse_api_seed,repaired-2026-11-15
