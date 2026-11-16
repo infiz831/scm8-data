@@ -1,27 +1,16 @@
 {
- "previous_last_date": "2026-11-13",
- "adjustments": [
-  {
-   "symbol": "BNAGROCHEM",
-   "date": "2026-11-16",
-   "factor": 10.0,
-   "subject": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share"
-  }
- ],
+ "previous_last_date": "2026-11-16",
+ "adjustments": [],
  "unexplained_gaps": [],
  "actions_not_confirmed": [],
  "ca_sources": {
   "nse_api": "ok, 5 bonus/split rows, 0 new",
-  "nse_pr_bc": "9 days read, 0 not available"
+  "nse_pr_bc": "6 days read, 0 not available"
  },
  "skipped_days": [],
- "new_symbols": [
-  "BNAGROCHEM"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-11-16",
- "days_added": [
-  "2026-11-16"
- ],
- "updated_at": "2026-11-17T04:19:39+05:30"
+ "days_added": [],
+ "updated_at": "2026-11-17T04:52:15+05:30"
 }
