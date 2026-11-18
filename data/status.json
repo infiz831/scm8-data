@@ -1,5 +1,5 @@
 {
- "previous_last_date": "2026-11-17",
+ "previous_last_date": "2026-11-18",
  "adjustments": [],
  "unexplained_gaps": [],
  "actions_not_confirmed": [],
@@ -8,13 +8,9 @@
   "nse_pr_bc": "7 days read, 0 not available"
  },
  "skipped_days": [],
- "new_symbols": [
-  "JKSHAH"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-11-18",
- "days_added": [
-  "2026-11-18"
- ],
- "updated_at": "2026-11-19T02:48:15+05:30"
+ "days_added": [],
+ "updated_at": "2026-11-19T03:22:59+05:30"
 }
