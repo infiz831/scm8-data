@@ -5,12 +5,16 @@
  "actions_not_confirmed": [],
  "ca_sources": {
   "nse_api": "ok, 6 bonus/split rows, 0 new",
-  "nse_pr_bc": "6 days read, 0 not available"
+  "nse_pr_bc": "7 days read, 0 not available"
  },
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "JKSHAH"
+ ],
  "note": "",
- "last_date": "2026-11-17",
- "days_added": [],
- "updated_at": "2026-11-18T10:09:56+05:30"
+ "last_date": "2026-11-18",
+ "days_added": [
+  "2026-11-18"
+ ],
+ "updated_at": "2026-11-19T02:48:15+05:30"
 }
