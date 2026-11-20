@@ -1,18 +1,16 @@
 {
- "previous_last_date": "2026-11-19",
+ "previous_last_date": "2026-11-20",
  "adjustments": [],
  "unexplained_gaps": [],
  "actions_not_confirmed": [],
  "ca_sources": {
-  "nse_api": "ok, 7 bonus/split rows, 1 new",
-  "nse_pr_bc": "9 days read, 0 not available"
+  "nse_api": "ok, 7 bonus/split rows, 0 new",
+  "nse_pr_bc": "8 days read, 0 not available"
  },
  "skipped_days": [],
  "new_symbols": [],
  "note": "",
  "last_date": "2026-11-20",
- "days_added": [
-  "2026-11-20"
- ],
- "updated_at": "2026-11-21T02:29:34+05:30"
+ "days_added": [],
+ "updated_at": "2026-11-21T03:16:40+05:30"
 }
