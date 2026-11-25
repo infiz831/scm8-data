@@ -5,12 +5,16 @@
  "actions_not_confirmed": [],
  "ca_sources": {
   "nse_api": "ok, 8 bonus/split rows, 0 new",
-  "nse_pr_bc": "7 days read, 0 not available"
+  "nse_pr_bc": "8 days read, 0 not available"
  },
  "skipped_days": [],
- "new_symbols": [],
+ "new_symbols": [
+  "MITSU"
+ ],
  "note": "",
- "last_date": "2026-11-23",
- "days_added": [],
- "updated_at": "2026-11-25T11:07:44+05:30"
+ "last_date": "2026-11-25",
+ "days_added": [
+  "2026-11-25"
+ ],
+ "updated_at": "2026-11-26T03:51:02+05:30"
 }
