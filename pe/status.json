@@ -1,6 +1,8 @@
 {
- "last_date": "2026-11-25",
- "days_added": [],
- "note": "P/E download failed for 2026-11-26 (HTTP 403); using the last P/E (2026-11-25).",
- "updated_at": "2026-11-27T03:44:48+05:30"
+ "last_date": "2026-11-26",
+ "days_added": [
+  "2026-11-26"
+ ],
+ "note": "",
+ "updated_at": "2026-11-27T04:27:47+05:30"
 }
