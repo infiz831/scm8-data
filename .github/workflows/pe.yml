@@ -1,0 +1,41 @@
+name: Index PE update
+
+# Runs after each price update has finished (so the two never push at the same time),
+# on manual start, and when this job's own files change. Touches only the pe/ folder.
+on:
+  workflow_run:
+    workflows: ["NSE daily update"]
+    types: [completed]
+  workflow_dispatch: {}
+  push:
+    paths: ['scripts/update_pe.py', '.github/workflows/pe.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pe-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pandas requests
+      - run: python scripts/update_pe.py pe data/meta.json
+      - name: Commit new P/E
+        run: |
+          git config user.name "scm8-data-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A pe
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "Index PE to $(python -c "import json;print(json.load(open('pe/status.json'))['last_date'])")"
+          git pull --rebase origin main
+          git push origin HEAD:main
