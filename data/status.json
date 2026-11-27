@@ -1,29 +1,16 @@
 {
- "previous_last_date": "2026-11-26",
- "adjustments": [
-  {
-   "symbol": "VGL",
-   "date": "2026-11-27",
-   "factor": 2.5,
-   "subject": "Face Value Split (Sub-Division) - From Rs 5/- Per Share To Rs 2/- Per Share"
-  }
- ],
+ "previous_last_date": "2026-11-27",
+ "adjustments": [],
  "unexplained_gaps": [],
  "actions_not_confirmed": [],
  "ca_sources": {
-  "nse_api": "ok, 7 bonus/split rows, 0 new",
-  "nse_pr_bc": "9 days read, 0 not available"
+  "nse_api": "ok, 6 bonus/split rows, 0 new",
+  "nse_pr_bc": "8 days read, 0 not available"
  },
  "skipped_days": [],
- "new_symbols": [
-  "HEGRAPHITE",
-  "MAHACOAL",
-  "VGL"
- ],
+ "new_symbols": [],
  "note": "",
  "last_date": "2026-11-27",
- "days_added": [
-  "2026-11-27"
- ],
- "updated_at": "2026-11-28T03:23:26+05:30"
+ "days_added": [],
+ "updated_at": "2026-11-28T04:09:30+05:30"
 }
